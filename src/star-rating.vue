@@ -97,6 +97,7 @@ export default {
                 if (persist) {
                     this.selectedRating = this.currentRating
                     this.$emit('rating-selected', this.selectedRating)
+                    this.$emit('input', this.selectedRating)
                 } else {
                     this.$emit('current-rating', this.currentRating)
                 }
